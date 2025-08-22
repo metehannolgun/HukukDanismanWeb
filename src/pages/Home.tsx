@@ -10,23 +10,38 @@ const Home = () => {
   return (
    <div>
     <Element name="home">
-       <motion.section  className='bg-red-500 h-screen flex flex-col items-center justify-center relative
-        ' initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 3 }}  >
-        <span>HomePage</span>
-        <div className='flex flex-row items-center gap-2'>
-         <button
+       <motion.section  className="bg-[url('/src/assets/banner.jpg')] bg-cover bg-center h-screen flex flex-col items-center justify-center relative " 
+          initial={{ opacity: 0.5}} animate={{ opacity: 1 }} transition={{ duration: 2 }}  >
+        <div className='text-center'>
+          <motion.h1
+           initial={{ y: -60, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.6, ease: "easeOut" }} 
+          className='text-5xl font-semibold tracking-tight text-balance text-white sm:text-7xl '>
+            Adalet İçin Yanınızdayız
+          </motion.h1>
+          <motion.p
+          initial={{ x: -60, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.6, ease: "easeOut" }} 
+          className="mt-8 text-lg font-medium text-pretty text-gray-400 sm:text-xl/8 ">
+           Deneyimli ve uzman avukat kadromuzla, her adımda haklarınızı koruyor; hukuki süreçlerinizde güvenilir, şeffaf ve çözüm odaklı yaklaşımımızla yanınızda oluyor ,<br/> en doğru sonuca ulaşmanız için titizlikle çalışıyoruz.
+          </motion.p>
+        </div>
+        <div className='mt-10 flex items-center justify-center gap-x-6'>
+           <motion.button 
+           
           onClick={() => scroller.scrollTo('about', { smooth: true, duration: 800, offset: -0 })}
-          className="px-6 py-2 bg-blue-600 text-white rounded-full shadow hover:bg-blue-700 transition" 
+          className="px-6 py-2 bg-blue-600 text-white rounded-full shadow hover:bg-blue-700 transition mt-10 cursor-pointer" 
           >
-          Hakkımızda
-          </button>
+          Hakkımızda 
+          </motion.button>
            <button
           onClick={() => scroller.scrollTo('services', { smooth: true, duration: 800, offset: -0 })} 
-           className="px-6 py-2 bg-blue-600 text-white rounded-full shadow hover:bg-blue-700 transition">
-          Hakkımızda
+           className="px-6 py-2 bg-blue-600 text-white rounded-full shadow hover:bg-blue-700 transition mt-10 cursor-pointer">
+          Hizmetlerimiz
           </button>
         </div>
-       
       </motion.section>
     </Element>
     <Element name='about' >
