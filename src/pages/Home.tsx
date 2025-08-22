@@ -12,7 +12,7 @@ const Home = () => {
     <Element name="home">
        <motion.section  className="bg-[url('/src/assets/banner.jpg')] bg-cover bg-center h-screen flex flex-col items-center justify-center relative " 
           initial={{ opacity: 0.5}} animate={{ opacity: 1 }} transition={{ duration: 2 }}  >
-        <div className='text-center'>
+        <div className="text-center text-white relative z-10 px-4 max-w-4xl mx-auto">
           <motion.h1
            initial={{ y: -60, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
@@ -42,10 +42,11 @@ const Home = () => {
           Hizmetlerimiz
           </button>
         </div>
+        
       </motion.section>
-    </Element>
+    </Element>    
     <Element name='about' >
-        <section className='bg-blue-500 h-screen flex items-center justify-center relative'>
+        <section className='bg-gradient-to-br from-gray-300 to-zinc-400 flex items-center min-h-[700px] justify-center relative'>
         <AboutSection />
         </section>
     </Element>
