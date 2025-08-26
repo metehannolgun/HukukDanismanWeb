@@ -46,18 +46,18 @@ const Home = () => {
       </motion.section>
     </Element>    
     <Element name='about' >
-        <section className='bg-gradient-to-br from-gray-300 to-zinc-400 flex items-center min-h-[700px] justify-center relative'>
+        <section className='flex items-center min-h-[700px] justify-center relative'>
         <AboutSection />
         </section>
     </Element>
     <Element name='services'>
-      <section className=' bg-orange-500 h-screen flex items-center justify-center relative'>
+      <section className='  h-screen flex items-center justify-center relative'>
           <ServicesPreview />
       </section>
     </Element>
     <Element name='contact'>
       
-      <section className='bg-purple-500 h-screen flex items-center justify-center relative'>
+      <section className=' h-screen flex items-center justify-center relative'>
           <ContactSection />
             <button
               onClick={() => scroller.scrollTo('home', { smooth: true, duration: 800, offset: -80 })}

@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const AboutSection = () => {
   return (
-    <div className='flex flex-col md:flex-row items-center justify-center'>
+    <div className='flex flex-col md:flex-row items-center justify-center opacity-90 bg-white p-8 rounded-3xl shadow-lg '>
         <div className='w-full md:w-1/2 flex justify-center  md:mb-0'>
           <img src='/src/assets/aboutPre.jpg' alt='Hakkımızda' className='rounded-2xl shadow-lg max-h-[500px] max-w-[600px]  ' 
           />
