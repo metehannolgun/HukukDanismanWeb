@@ -9,7 +9,7 @@ const services = [
 ];
 
 const ServicesPreview = () => (
-  <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6 py-8 shadow-lg p-8">
+  <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6 py-8  p-8">
     {services.map((service, idx) => (
       <div key={idx} className="bg-white rounded-xl shadow p-6 flex flex-col items-center text-center">
         <h3 className="font-bold text-lg mb-2">{service.title}</h3>

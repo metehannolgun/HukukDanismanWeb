@@ -10,9 +10,9 @@ const Home = () => {
   return (
    <div>
     <Element name="home">
-       <motion.section  className="bg-[url('/src/assets/banner.jpg')] bg-cover bg-center h-screen flex flex-col items-center justify-center relative " 
+       <motion.section  className="bg-[url('/src/assets/banner.jpg')] bg-cover bg-center h-screen flex flex-col items-center justify-center relative  " 
           initial={{ opacity: 0.5}} animate={{ opacity: 1 }} transition={{ duration: 2 }}  >
-        <div className="text-center text-white relative z-10 px-4 max-w-4xl mx-auto">
+        <div className="text-center text-white relative z-10 px-4 max-w-4xl mx-auto ">
           <motion.h1
            initial={{ y: -60, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
@@ -38,7 +38,7 @@ const Home = () => {
           </motion.button>
            <button
           onClick={() => scroller.scrollTo('services', { smooth: true, duration: 800, offset: -0 })} 
-           className="px-6 py-2 bg-blue-600 text-white rounded-full shadow hover:bg-blue-700 transition mt-10 cursor-pointer">
+           className="px-6 py-2 bg-blue-600 text-white rounded-full shadow hover:bg-blue-700 transition mt-10 cursor-pointer ">
           Hizmetlerimiz
           </button>
         </div>
@@ -46,18 +46,18 @@ const Home = () => {
       </motion.section>
     </Element>    
     <Element name='about' >
-        <section className='flex items-center min-h-[700px] justify-center relative'>
+        <section className='flex items-center min-h-[700px] justify-center relative shadow-lg'>
         <AboutSection />
         </section>
     </Element>
     <Element name='services'>
-      <section className='  h-screen flex items-center justify-center relative'>
+      <section className='  h-screen flex items-center justify-center relative shadow-lg'>
           <ServicesPreview />
       </section>
     </Element>
     <Element name='contact'>
       
-      <section className=' h-screen flex items-center justify-center relative'>
+      <section className=' h-screen flex items-center justify-center relative shadow-lg'>
           <ContactSection />
             <button
               onClick={() => scroller.scrollTo('home', { smooth: true, duration: 800, offset: -80 })}
